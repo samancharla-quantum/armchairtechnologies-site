@@ -174,3 +174,13 @@ footer .wrap{align-items:center}
   .photo-band-text{align-items:flex-end;background:linear-gradient(180deg,rgba(7,18,38,0) 35%,rgba(7,18,38,.9) 85%)}
   .photo-band-copy{margin-left:0;padding-bottom:26px}
 }
+/* Credential card (MIT xPRO) */
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.credential{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;max-width:560px;margin:4px 0 18px;padding:16px;border:1px solid #e3e8f0;border-radius:var(--radius);background:#fff;box-shadow:var(--shadow)}
+.credential-thumb img{width:150px;height:auto;border-radius:6px;border:1px solid #e3e8f0;transition:transform .15s}
+.credential-thumb:hover img{transform:scale(1.03)}
+.credential-label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px}
+.credential-body h3{font-size:1.05rem;line-height:1.3;margin:0 0 4px}
+.credential-meta{font-size:.9rem;color:var(--slate-600);margin:0 0 6px}
+.credential-verify{font-size:.92rem;font-weight:600}
+@media (max-width:480px){.credential{grid-template-columns:1fr}.credential-thumb img{width:100%}}
