@@ -1,12 +1,12 @@
 /* Armchair Technologies — styles. No build step. */
 :root{
-  --navy-950:#071226; --navy-900:#0b1a33; --navy-800:#12264a; --navy-700:#1c3563;
-  --slate-700:#3c4a60; --slate-600:#4f5d74; --slate-300:#c3ccd9; --slate-100:#eef1f6;
-  --paper:#f8f6f1; --white:#fff;
-  --gold:#e0a84a; --gold-deep:#9a6414; --sky:#8fb3d9;
+  --navy-950:#1A1D21; --navy-900:#2C333A; --navy-800:#3F4953; --navy-700:#3F4953;
+  --slate-700:#3F4953; --slate-600:#5C6770; --slate-300:#C5CBCF; --slate-100:#E8EAEC;
+  --paper:#F3F4F5; --white:#FFFFFF;
+  --gold:#8A2E2F; --gold-deep:#8A2E2F; --sky:#C5CBCF;
   --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
   --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --radius:14px; --shadow:0 10px 30px rgba(11,26,51,.08);
+  --radius:14px; --shadow:0 10px 30px rgba(26,29,33,.08);
   --wrap:1160px;
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -200,3 +200,42 @@ footer .wrap{align-items:center}
 .subsection{margin-top:72px}
 .about-points{padding-left:1.1em;margin:0 0 1.2em}
 .about-points li{margin-bottom:.5em}
+
+
+/* Palette A — live tokens and component overrides */
+.brand-technologies{color:#5C6770;}
+.skip{background:#8A2E2F;color:#FFFFFF;}
+.btn-gold{background:#8A2E2F;color:#FFFFFF;}
+.btn-gold:hover{background:#6B2425;color:#FFFFFF;}
+:focus-visible{outline-color:#8A2E2F;}
+.hero{background:linear-gradient(160deg,var(--navy-950),var(--navy-900));color:#D0D3D6;}
+.hero .eyebrow,.hero .theme2,.dot,.photo-band-copy .eyebrow{color:#C8726A;}
+.hero .lede,.open-card,.open-card li,.contact .lede{color:#C5CBCF;}
+.stat span,.contact .loc{color:#B8BDC2;}
+.value,.service.cta-card,.venture{border-color:#E4E6E8;}
+.service,.logos li,.credential,.credential-thumb img{border-color:#E4E6E8;}
+footer{color:#9AA1A7;}
+footer a{color:#C5CBCF;}
+.photo-band-text{background:linear-gradient(90deg,rgba(26,29,33,.15) 0%,rgba(26,29,33,.1) 45%,rgba(26,29,33,.82) 68%,rgba(26,29,33,.94) 100%);}
+@media (max-width:800px){
+  .photo-band-text{background:linear-gradient(180deg,rgba(26,29,33,0) 35%,rgba(26,29,33,.9) 85%);}
+}
+
+
+/* Palette A revision 2 — red hero-card rules; Let’s talk on a flat white band */
+.open-card li{border-top-color:#C8726A;}
+.contact .eyebrow{
+  display:block;
+  width:100vw;
+  max-width:none;
+  box-sizing:border-box;
+  margin:0 0 48px;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+  padding:12px 24px;
+  background:#FFFFFF;
+  color:#8A2E2F !important;
+  border-radius:0;
+  box-shadow:none;
+  text-align:center;
+}
